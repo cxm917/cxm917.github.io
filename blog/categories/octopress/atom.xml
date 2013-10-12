@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: octopress | cxm917的博客]]></title>
+  <link href="http://cxm917.github.io/blog/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://cxm917.github.io/"/>
+  <updated>2013-10-12T02:40:27+02:00</updated>
+  <id>http://cxm917.github.io/</id>
+  <author>
+    <name><![CDATA[cxm917]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[octopress和markdown的一点笔记]]></title>
+    <link href="http://cxm917.github.io/blog/2013/10/11/notes-on-octopress-and-markdown/"/>
+    <updated>2013-10-11T22:02:00+02:00</updated>
+    <id>http://cxm917.github.io/blog/2013/10/11/notes-on-octopress-and-markdown</id>
+    <content type="html"><![CDATA[<p>第一篇文章就记录一下octopress发布文章常用的命令和markdown的基本语法，以便自己可以经常参考。</p>
+
+<h2>octopress</h2>
+
+<p>发布新文章 <br/>
+<code>
+rake new_post["title"]
+</code></p>
+
+<p>生成页面<br/>
+<code>rake generation</code></p>
+
+<p>页面预览，执行后在localhost:4000预览生成的页面<br/>
+<code>rake preview</code></p>
+
+<p>发布页面<br/>
+<code>rake deploy</code></p>
+
+<p>向git提交更新的源文件<br/>
+<code>git add -A</code><br/>
+<code>git commit -m "some changes"</code><br/>
+<code>git push</code></p>
+
+<!--more-->
+
+
+<h2>Markdown</h2>
+
+<h4>斜体</h4>
+
+<p><code>
+*斜体*  
+_斜体_
+</code>
+<em>斜体</em></p>
+
+<h4>加粗</h4>
+
+<p><code>
+**加粗**
+__加粗__
+</code>
+<strong>加粗</strong></p>
+
+<h4>链接</h4>
+
+<p>inline:<br/>
+<code>
+[举个栗子](http://www.google.com "google")  
+</code></p>
+
+<p>reference-style labels:<br/>
+```
+<a href="http://www.google.com" title="google">举个栗子</a> 在别的地方定义这个链接</p>
+
+<p>```
+<a href="http://www.google.com" title="google">举个栗子</a></p>
+
+<h4>图片</h4>
+
+<p>inline:
+<code>
+![saarland](https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn1/c0.0.131.131/150047_120808601315950_7362366_n.jpg "saarland")
+</code></p>
+
+<p>reference-style:
+```
+<img src="http://www.google.com" title="google" alt="saarland" /></p>
+
+<p>```
+<img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn1/c0.0.131.131/150047_120808601315950_7362366_n.jpg" title="saarland" alt="saarland" /></p>
+
+<h4>标题</h4>
+
+<p>```</p>
+
+<h1>一级标题</h1>
+
+<h2>二级标题</h2>
+
+<h3>三级标题</h3>
+
+<p>&hellip;.
+```</p>
+
+<h1>一级标题</h1>
+
+<h2>二级标题</h2>
+
+<h3>三级标题</h3>
+
+<p>&hellip;.</p>
+
+<h4>代码块</h4>
+
+<p>1.夹在两个\`\``之间<br/>
+2.一个TAB或四个空格缩进</p>
+
+<pre><code>```c(这里的c表示这段代码是c程序，生成的页面会采用相应的高亮)
+printf("hello world\n");
+```
+</code></pre>
+
+<p><code>c
+printf("hello world\n");
+</code></p>
+
+<h4>列表</h4>
+
+<p>无序
+<code>
+* list1
+* list2
+* list3
+</code>
+* list1
+* list2
+* list3</p>
+
+<p>有序
+<code>
+1. list1
+2. list2
+8. list3
+</code>
+1. list1
+2. list2
+8. list3<br/>
+前面的标号并不影响最终生成的编号</p>
+
+<h4>引用</h4>
+
+<pre><code>&gt;我是引用 
+&gt;我也是引用
+</code></pre>
+
+<blockquote><p>我是引用<br/>
+我也是引用</p></blockquote>
+]]></content>
+  </entry>
+  
+</feed>

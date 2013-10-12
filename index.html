@@ -9,7 +9,8 @@
   <meta name="author" content="cxm917">
 
   
-  <meta name="description" content=" Blog Archives Recent Posts ">
+  <meta name="description" content="第一篇文章就记录一下octopress发布文章常用的命令和markdown的基本语法，以便自己可以经常参考。 octopress 发布新文章 rake new_post["title"] 生成页面
+rake generation 页面预览，执行后在localhost:4000预览生成的页面 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -38,7 +39,7 @@
   <header role="banner"><hgroup>
   <h1><a href="/">cxm917的博客</a></h1>
   
-    <h2>my replicated brain</h2>
+    <h2>年纪大了脑子不好使，东西都得写下来~</h2>
   
 </hgroup>
 
@@ -66,6 +67,68 @@
       <div class="blog-index">
   
   
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/10/11/notes-on-octopress-and-markdown/">Octopress和markdown的一点笔记</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-10-11T22:02:00+02:00" pubdate data-updated="true">Oct 11<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>第一篇文章就记录一下octopress发布文章常用的命令和markdown的基本语法，以便自己可以经常参考。</p>
+
+<h2>octopress</h2>
+
+<p>发布新文章 <br/>
+<code>
+rake new_post["title"]
+</code></p>
+
+<p>生成页面<br/>
+<code>rake generation</code></p>
+
+<p>页面预览，执行后在localhost:4000预览生成的页面<br/>
+<code>rake preview</code></p>
+
+<p>发布页面<br/>
+<code>rake deploy</code></p>
+
+<p>向git提交更新的源文件<br/>
+<code>git add -A</code><br/>
+<code>git commit -m "some changes"</code><br/>
+<code>git push</code></p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/10/11/notes-on-octopress-and-markdown/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
   <div class="pagination">
     
     <a href="/blog/archives">Blog Archives</a>
@@ -75,15 +138,28 @@
 <aside class="sidebar">
   
     <section>
+<h1>Categories</h1>
+<ul id="categories">
+    <li class='category'><a href='/blog/categories/octopress/'>octopress (1)</a></li>
+
+</ul>
+</section>
+<section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
     
+      <li class="post">
+        <a href="/blog/2013/10/11/notes-on-octopress-and-markdown/">Octopress和markdown的一点笔记</a>
+      </li>
+    
   </ul>
 </section>
-
-
-
-
+<section>
+    <h1>Tags</h1>
+    <ul class="tag-cloud">
+        
+    </ul>
+</section>
 
   
 </aside>
